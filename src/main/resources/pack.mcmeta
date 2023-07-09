@@ -1,7 +1,8 @@
 {
-    "pack": {
-        "description": "modnamehere resources",
-                "pack_format": 15
-                                                ,"forge:server_data_pack_format": 12
-                    }
+  "pack": {
+    "description": {
+      "text": "untitledmod Resources"
+    },
+    "pack_format": 15
+  }
 }
