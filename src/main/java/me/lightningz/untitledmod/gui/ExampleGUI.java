@@ -10,10 +10,12 @@ import org.jetbrains.annotations.NotNull;;
 
 public class ExampleGUI extends Screen {
 
-    private static final ResourceLocation gui_bg = new ResourceLocation("untitledmod:sprite-0001.png");
+    private static final ResourceLocation gui_bg = new ResourceLocation("untitledmod:bg2.png");
+    private String menutitle;
 
-    public ExampleGUI(Component title) {
-        super(title);
+    public ExampleGUI(String title) {
+        super(Component.literal(""));
+        this.menutitle = title;
     }
 
     @Override
@@ -22,9 +24,10 @@ public class ExampleGUI extends Screen {
         this.renderBackground(graphics);
 
         // Render things here before widgets (background textures)
-        int relX = (this.width - 431) / 2;
-        int relY = (this.height - 202) / 2;
-        graphics.blit(gui_bg, relX, relY, 0, 0, 403, 202);
+        int relX = (this.width - 256) / 2;
+        int relY = (this.height - 119) / 2;
+        graphics.blit(gui_bg, relX, relY, 0, 69, 256, 159);
+        graphics.drawCenteredString(this.font, this.menutitle, this.width/2, 8, 16777215);
 
         // Then the widgets if this is a direct child of the Screen
         super.render(graphics, mouseX, mouseY, partialTick);
