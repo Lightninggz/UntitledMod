@@ -14,6 +14,8 @@ public class Items {
 
     public static final RegistryObject<Item> LIGHTNING_INGOT = ITEMS.register("lightning_ingot", () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> LIGHTNING_BOLT = ITEMS.register("lightning_bolt", () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
