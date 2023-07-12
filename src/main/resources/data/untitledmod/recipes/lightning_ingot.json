@@ -1,9 +1,9 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "untitledmod:lighting_bolt"
+    "item": "untitledmod:lightning_bolt"
   },
-  "result": "untitledmod:lighting_ingot",
+  "result": "untitledmod:lightning_ingot",
   "experience": 20,
   "cookingtime": 10
 }
