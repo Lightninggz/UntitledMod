@@ -16,6 +16,8 @@ public class Items {
 
     public static final RegistryObject<Item> LIGHTNING_BOLT = ITEMS.register("lightning_bolt", () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> E_FLINT_STEEL = ITEMS.register("activator", () -> new PortalCatalyst(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
